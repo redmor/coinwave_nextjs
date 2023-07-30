@@ -22,7 +22,7 @@ async function NewsCard({ newsCount }) {
         <div className="grid grid-cols-12">
           {Data.map((d) => (
             <div key={d.id} className="flex col-span-12 sm:col-span-6 bg-slate-700 m-3">
-              <Image src={d.imageurl} alt={d.title} width={100} height={100} />
+              <Image src={d.imageurl} alt={d.title} width={100} height={100} style={{objectFit: "cover"}} />
               <div className="flex flex-col gap-3 p-2">
                 <div className="flex gap-2">
                   <p className=" text-orange-600">{d.source_info.name}</p>
