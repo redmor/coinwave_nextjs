@@ -6,7 +6,7 @@ function Footer() {
       <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between h-20 p-5">
         <div>
           <div className="text-4xl text-transparent bg-clip-text bg-gradient-to-r hover:bg-gradient-to-l from-indigo-500 via-purple-500 to-pink-500 cursor-pointer transition-all ease-in-out duration-1000 ">coinwave</div>
-          <p className="text-purple-300/50">Sam Rabili &copy;2023</p>
+          <p className="text-purple-300/50">Sam Rabili &copy;2023 | CoinGecko API</p>
         </div>
         <div>
           <h2 className="text-2xl border-b-2 border-purple-500 mb-5">Navigation</h2>
