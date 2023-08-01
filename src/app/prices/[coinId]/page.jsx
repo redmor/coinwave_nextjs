@@ -15,15 +15,15 @@ export default async function GetCoinData({ params: { coinId } }) {
   //   }
 
   return (
-    <article className="max-w-7xl mx-3 my-10 sm:mx-auto">
-      <div className="border border-purple-800 p-5 flex flex-col items-center">
+    <article className="max-w-7xl mx-3 my-10 sm:mx-auto sm:flex justify-center items-stretch gap-4">
+      <div className="border border-purple-800 p-5 flex flex-col items-center sm:gap-5 my-4">
         <Image src={data.image.large} alt={data.name} width={200} height={200} priority={true} />
-        <p className="text-3xl">{USDollar.format(data.market_data.current_price.usd)}</p>
+        <p className="text-3xl sm:text-5xl">{USDollar.format(data.market_data.current_price.usd)}</p>
         <a className="hover:text-gray-400" href={data.links.homepage.slice(0, -2)}>
           {data.links.homepage}
         </a>
       </div>
-      <div className="border border-purple-800 p-5">{data.description.en ? <h1 key={data.id} dangerouslySetInnerHTML={{ __html: data.description.en }} /> : <h1 className="text-5xl">Description not available</h1>}</div>
+      <div className="border border-purple-800 p-5 my-4 ">{data.description.en ? <h1 key={data.id} dangerouslySetInnerHTML={{ __html: data.description.en }} /> : <h1 className="text-5xl">Description not available</h1>}</div>
     </article>
   );
 }
